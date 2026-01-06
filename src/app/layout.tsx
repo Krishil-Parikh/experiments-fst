@@ -2,12 +2,14 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import Navbar from "@/components/layout/Navbar";
+import Footer from "@/components/layout/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "My Portfolio 2026",
-  description: "Full-stack developer portfolio with Next.js & Tailwind",
+  title: "Alex Johnson | Full-Stack Developer",
+  description: "Portfolio of Alex Johnson - Next.js, TypeScript, Tailwind",
 };
 
 export default function RootLayout({
@@ -16,9 +18,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={`${inter.className} antialiased bg-gray-50`}>
-        {children}
+    <html lang="en" className="scroll-smooth">
+      <body className={`${inter.className} antialiased bg-gray-50 flex flex-col min-h-screen`}>
+        <Navbar />
+        <main className="flex-grow">{children}</main>
+        <Footer />
       </body>
     </html>
   );

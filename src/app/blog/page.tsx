@@ -1,27 +1,27 @@
 // src/app/blog/page.tsx
 export default function Blog() {
   return (
-    <div className="container mx-auto py-16 px-6 max-w-4xl">
-      <h1 className="text-4xl font-bold mb-12">Blog</h1>
+    <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-20 lg:py-24">
+      <h1 className="text-4xl md:text-5xl font-bold mb-12 md:mb-16">Blog</h1>
 
-      <div className="space-y-10">
-        <article>
-          <h2 className="text-2xl font-semibold mb-3 hover:text-blue-600">
-            <a href="/blog/nextjs-15-new-features">What's New in Next.js 15</a>
+      <div className="max-w-3xl mx-auto space-y-12">
+        <article className="group">
+          <h2 className="text-2xl md:text-3xl font-semibold mb-3 group-hover:text-blue-600 transition-colors">
+            <a href="/blog/nextjs-15-new-features">What&apos;s New in Next.js 15 (2026 Edition)</a>
           </h2>
-          <p className="text-gray-600 mb-2">December 18, 2025 • 6 min read</p>
-          <p className="text-gray-700">
-            A quick overview of the most important changes and new features in Next.js 15...
+          <div className="text-gray-500 text-sm mb-3">January 5, 2026 • 7 min read</div>
+          <p className="text-gray-700 leading-relaxed">
+            A deep dive into the latest features, improvements and best practices for Next.js 15...
           </p>
         </article>
 
-        <article>
-          <h2 className="text-2xl font-semibold mb-3 hover:text-blue-600">
-            <a href="/blog/prisma-vs-drizzle">Prisma vs Drizzle in 2026 – Which is better?</a>
+        <article className="group">
+          <h2 className="text-2xl md:text-3xl font-semibold mb-3 group-hover:text-blue-600 transition-colors">
+            <a href="/blog/prisma-vs-drizzle">Prisma vs Drizzle ORM – Real World Comparison 2026</a>
           </h2>
-          <p className="text-gray-600 mb-2">November 5, 2025 • 9 min read</p>
-          <p className="text-gray-700">
-            Comparing modern TypeScript ORMs after using both in production for 6+ months...
+          <div className="text-gray-500 text-sm mb-3">December 12, 2025 • 10 min read</div>
+          <p className="text-gray-700 leading-relaxed">
+            After using both in production for 8+ months, here&apos;s my honest take...
           </p>
         </article>
       </div>
